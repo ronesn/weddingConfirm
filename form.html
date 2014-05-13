@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>אישור הגעה נועם והילה</title>
+	<link rel="shortcut icon" type="image/x-icon" href="includes/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="includes/css/view.css" media="all">
+	<script type="text/javascript" src="includes/js/view.js"></script>
+</head>
+<body id="main_body" >
+	<img id="top" src="includes/images/top.png" alt="">
+	<div id="form_container">
+		<footer>
+			<h1><a>נועם והילה מתחתנים</a></h1>
+			<h1><a>22.6.2014</a></h1>
+		</footer>
+		<form id="form_839946" class="appnitro"  method="post" action="welcome.php">
+			<div class="form_description">
+				<h2> אנא אשרו הגעתכם</h2>
+			</div>						
+			<ul >
+				<li  >
+					<label class="description" for="element_5">האם אתה מגיע? </label>
+					<section id="coming">
+						<input type="radio" id="element_5_3" name="radio"   value="1" />
+						<label class="choice" for="element_5_3">כן, רק אני</label>
+						<input type="radio" id="element_5_3" name="radio"   value="2" onclick="coupleSelect()"/>
+						<label class="choice" for="element_5_3">כן, בזוג</label>
+						<input type="radio" id="element_5_3" name="radio"   value="0" />
+						<label class="choice" for="element_5_3">לא מגיע :(</label>
+						<input type="radio" id="element_5_3" name="radio"   value="-1" />
+						<label class="choice" for="element_5_3">לא בטוח עדיין</label>
+						<input type="radio" id="family" name="radio"   value="5" onclick="familySelect()"/>
+						<label class="choice" for="family">כל המשפוחה</label>
+					</section>
+				</li>		
+				<li id="name" >
+					<label  class="description" for="element_1">שם </label>
+					<section>
+						<input id="first" name= "first" class="element text" type="text" maxlength="255" size="8" value=""/>
+						<label>פרטי</label>
+					</section>
+					<section>
+						<input id="last" name= "last" class="element text" type="text" maxlength="255" size="14" value=""/>
+						<label>משפחה</label>
+					</section> 
+				</li>		
+				<li id="li_2" >
+					<label class="description" for="email">Email </label>
+					<div>
+						<input id="email" name="email" class="element text medium" type="email" maxlength="255" value=""/> 
+					</div> 
+					</li>		
+				<li id="li_3" >
+					<label class="description" for="element_3">טלפון </label>
+					<section>
+						<input id="phone_1" name="phone_1" class="element text" size="7" maxlength="7" value="" type="text"> -
+						<label for="phone_1">#######</label>
+					</section>
+					<section>
+						<input id="phone_2" name="phone_2" class="element text" size="3" maxlength="3" value="" type="text"> 
+						<label for="phone_2">(###)</label>
+					</section>
+				</li>		
+				<li id="li_4" >
+					<label class="description" for="notes">הערות </label>
+					<div>
+						<textarea id="notes" name="notes" class="element textarea medium"></textarea> 
+					</div> 
+				</li>	
+				<li class="buttons">
+					<input id="saveForm" class="button_text" type="submit" name="submit" value="שלח" />
+				</li>
+			</ul>
+		</form>	
+	</div>
+	<img id="bottom" src="includes/images/bottom.png" alt="">
+	</body>
+</html>
